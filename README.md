@@ -11,10 +11,10 @@ Several changes have been made with respect to the original work and some bugs h
 3. run the APP on your phone, usually, the APP will fail to run properly at the first attempt, this is because the mdx file has not been put into the scoped storage of the APP 
 yet.
 
-4. put the mdx file into the scoped storage of the APP, in my case, I have put the mdx into /storage/emulated/0/Android/data/com.example.myapplication/files/
+4. put the mdx file into the scoped storage of the APP, in my case, I have put the mdx into /storage/emulated/0/Android/data/com.example.mdictjnilibrary/files/
 
-5. check the MainActivity file in the project, you should modify the global variable path and word. The path is your mdx file name and the word is the search item. Run the APP 
-again and you will see that the returned HTML string is successful rendered.
+5. check the MainActivity file in the project, you should modify the global variable path and the global variable word. The path is your mdx file name and the word is the search item. Run the APP 
+again you will see that the returned HTML string is successful rendered.
 ## Note
 The query doesn't seem to work on some of the mdx file I have tested, this is currently under my investigation.
 
