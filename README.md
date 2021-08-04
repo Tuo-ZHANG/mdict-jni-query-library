@@ -15,8 +15,9 @@ yet.
 
 5. check the MainActivity file in the project, you should modify the global variable path and the global variable word. The path is your mdx file name and the word is the search item. Run the APP 
 again you will see that the returned HTML string is successful rendered.
+
 ## Note
-The query doesn't seem to work on some of the mdx file I have tested, this is currently under my investigation.
+Due to unknown reasons, for some mdx file, if the webview of Android renders the HTML passed from the jni layer directly, only a partial of the HTML will shown in the webview. I have circumvented this bug by writing the HTML that comes from the jni layer to local storage and then access the local HTML file through webview. 
 
 ## Acknowledgment
 Many thanks to [terasum](https://github.com/terasum) for helping me understand his library and the consultation he provided. 
